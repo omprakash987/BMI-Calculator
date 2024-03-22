@@ -5,8 +5,8 @@ import React, { useState } from 'react'
 
 const page = () => {
 
-    const [height,setHeight] = useState(''); 
-    const [Weight,setWeight] = useState(''); 
+    const [height,setHeight] = useState(0); 
+    const [Weight,setWeight] = useState(0); 
     const [bmiResult, setBmiResult] = useState<string | null>(null);
 
 
@@ -49,7 +49,7 @@ className="max-w-sm mx-auto">
   <div className="mb-5">
     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Height</label>
     <input
-    type='text'
+    type='number'
      value={height}
       onChange={(e)=>setHeight(e.target.value)}
     
@@ -58,7 +58,7 @@ className="max-w-sm mx-auto">
   <div className="mb-5">
     <label   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Weight</label>
     <input
-    type='text'
+    type='number'
     value={Weight}
     onChange={(e)=>setWeight(e.target.value)}
 
