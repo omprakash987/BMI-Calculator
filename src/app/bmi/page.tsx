@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
 
     const [height,setHeight] = useState(0); 
     const [Weight,setWeight] = useState(0); 
@@ -82,4 +82,5 @@ className="max-w-sm mx-auto">
   )
 }
 
-export default page
+export default Page; 
+
