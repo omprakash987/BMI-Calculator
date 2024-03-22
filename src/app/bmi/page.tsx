@@ -15,6 +15,8 @@ const Page = () => {
 
 
     const calculatetBmi=()=>{
+       
+
         const  heightInMeter = parseFloat(height)/100; 
          
 
